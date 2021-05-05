@@ -1,177 +1,175 @@
 <!DOCTYPE html>
-<html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <title>MediFast</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+            <script src="js/scripts.js"></script>
+            <link rel="stylesheet" href="css/style.css">
+        </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>MediFast</title>
-    <link rel="icon" href="favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script src="js/scripts.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+        <body id="object">
+            <header>
+                <a id="logo" href="index.html"></a>
+                <a href="#" class="profile"></a>
+                <section class="online"></section>
+                <a class="menu" href="#"></a>
+                <a class="searchPhone" href="#"><img src="images/search.svg" alt="search"></a>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="new.html">New Reqeusts</a></li>
+                    <li><a href="new.html">Pending Requests</a></li>
+                </ul>
+                <a class="search" href="#"><img src="images/search.svg" alt="search"></a>
+            </nav>
+            <main>
+                <div id="wrapper">
+                    <section class="clientProfileContainer">
+                        <article class="pic"></article>
+                        <p>Sharon Avital</p>
+                        <p class="phoneNum"><a href="#">+972 53 - 708 - 4973</a></p>
+                        <section><a href="form.html"><input class="prescriptionButton" type="button" value="Prescription"></a>
+                        </section>
+                        <section><input class="informationButton" type="button" value="Ask information"></section>
+                    </section>
+                    <section class="infoContainer">
+                        <p><b>Gender</b><br>Female</p>
+                        <p><b>Birthday</b><br>14.07.1994</p>
+                        <p><b>Adress</b><br>Hertzl 10</p>
+                        <p><b>City</b><br>Tel Aviv</p>
+                        <p class="reg"><b>Registration Date</b><br>02.02.2021, 13:36</p>
+                        <p><b>Emergency Contact</b><br><a href="#">+972 52 - 250 - 0101</a></p>
+                    </section>
+                    <section class="questionnaireContainer">
+                        <span>Request</span>
+                        <section class="oneQuestionContainer">
+                            <p>Does the pain radiate to one of the following areas:<br><span> Several options can be
+                                    marked.</span></p>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" checked disabled>
+                                    <label class="form-check-label">
+                                        Chest
+                                    </label>
+                                </div>
+                            </div>
 
-<body id="object">
-    <header>
-        <a id="logo" href="index.html"></a>
-        <a href="#" class="profile"></a>
-        <section class="online"></section>
-        <a class="menu" href="#"></a>
-        <a class="searchPhone" href="#"><img src="images/search.svg" alt="search"></a>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Pending Reqeusts</a></li>
-            <li><a href="#">Settings</a></li>
-        </ul>
-        <a class="search" href="#"><img src="images/search.svg" alt="search"></a>
-    </nav>
-    <main>
-        <div id="wrapper">
-            <section class="clientProfileContainer">
-                <article class="pic"></article>
-                <p>Sharon Avital</p>
-                <p class="phoneNum"><a href="#">+972 53 - 708 - 4973</a></p>
-                <section><a href="form.html"><input class="prescriptionButton" type="button" value="Prescription"></a></section>
-                <section><input class="informationButton" type="button" value="Ask information"></section>
-            </section>
-            <section class="infoContainer">
-                <p><b>Gender</b><br>Female</p>
-                <p><b>Birthday</b><br>14.07.1994</p>
-                <p><b>Adress</b><br>Hertzl 10</p>
-                <p><b>City</b><br>Tel Aviv</p>
-                <p class="reg"><b>Registration Date</b><br>02.02.2021, 13:36</p>
-                <p><b>Emergency Contact</b><br><a href="#">+972 52 - 250 - 0101</a></p>
-            </section>
-            <section class="questionnaireContainer">
-                <span>Request</span>
-                <section class="oneQuestionContainer">
-                    <p>Does the pain radiate to one of the following areas:<br><span> Several options can be
-                            marked.</span></p>
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" checked disabled>
-                            <label class="form-check-label">
-                                Chest
-                            </label>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" disabled>
+                                    <label class="form-check-label">
+                                        Back
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" disabled>
+                                    <label class="form-check-label">
+                                        Crotch
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" disabled>
+                                    <label class="form-check-label">
+                                        Feet
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" disabled>
+                                    <label class="form-check-label">
+                                        Hip
+                                    </label>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="oneQuestionContainer">
+                            <p>One of these symptoms came with the stomach pain:<br><span> Several options can be marked.</span>
+                            </p>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" disabled>
+                                    <label class="form-check-label">
+                                        Heat
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" disabled>
+                                    <label class="form-check-label">
+                                        Vomiting
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" checked disabled>
+                                    <label class="form-check-label">
+                                        Constipation
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" checked disabled>
+                                    <label class="form-check-label">
+                                        Vomiting
+                                    </label>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="mb-3">
+                            <label class="form-label">Description:</label>
+                            <textarea name="address" class="form-control" rows="2"
+                                placeholder="This is a textarea, and it is not clickable"></textarea>
                         </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" disabled>
-                            <label class="form-check-label">
-                                Back
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" disabled>
-                            <label class="form-check-label">
-                                Crotch
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" disabled>
-                            <label class="form-check-label">
-                                Feet
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" disabled>
-                            <label class="form-check-label">
-                                Hip
-                            </label>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="oneQuestionContainer">
-                    <p>One of these symptoms came with the stomach pain:<br><span> Several options can be marked.</span>
-                    </p>
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" disabled>
-                            <label class="form-check-label">
-                                Heat
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" disabled>
-                            <label class="form-check-label">
-                                Vomiting
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" checked disabled>
-                            <label class="form-check-label">
-                                Constipation
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" checked disabled>
-                            <label class="form-check-label">
-                                Vomiting
-                            </label>
-                        </div>
-                    </div>
-                </section>
-                <div class="mb-3">
-                    <label class="form-label">Description:</label>
-                    <textarea name="address" class="form-control" rows="2"
-                        placeholder="This is a textarea, and it is not clickable"></textarea>
+                    </section>
+                    <section class="medicalPast">
+                        <p>Medical Past</p>
+                        <section>
+                            <span>17</span>
+                            <p>SEP 2020</p>
+                        </section>
+                        <p class="sicknessName"><span>COVID - 19</span><br><a href="#"> DR. Soualhi, General Doctor</a></p>
+                        <section>
+                            <span>21</span>
+                            <p>FEB 2021</p>
+                        </section>
+                        <p class="sicknessName"><span>Hospitalisation: ICHILOV, Appendicits</span><br><a href="#"> DR. Rahmani,
+                                Gastroenterologist</a></p>
+                    </section>
                 </div>
-            </section>
-            <section class="medicalPast">
-                <p>Medical Past</p>
-                <section>
-                    <span>17</span>
-                    <p>SEP 2020</p>
+                <section class="menuArea">
+                    <a class="exitMenu" href="#"></a>
+                    <ul class="menuContent">
+                        <li><a href="index.html">New Requests</a></li>
+                        <li><a href="#">pending Requests</a></li>
+                        <li><a href="#">Account Settings</a></li>
+                    </ul>
                 </section>
-                <p class="sicknessName"><span>COVID - 19</span><br><a href="#"> DR. Soualhi, General Doctor</a></p>
-                <section>
-                    <span>21</span>
-                    <p>FEB 2021</p>
-                </section>
-                <p class="sicknessName"><span>Hospitalisation: ICHILOV, Appendicits</span><br><a href="#"> DR. Rahmani,
-                        Gastroenterologist</a></p>
-            </section>
-        </div>
-        <section class="menuArea">
-            <a class="exitMenu" href="#"></a>
-            <ul class="menuContent">
-                <li><a href="index.html">New Requests</a></li>
-                <li><a href="#">pending Requests</a></li>
-                <li><a href="#">Account Settings</a></li>
-            </ul>
-        </section>
-        <script>
-            (function () {
-                openMenu();
-                closeMenu()
-            })();
-        </script>
-    </main>
-    <footer></footer>
-</body>
-
-</html>
+                <script>
+                    (function () {
+                        openMenu();
+                        closeMenu()
+                    })();
+                </script>
+            </main>
+            <footer></footer>
+        </body>
+    </html>
