@@ -1,0 +1,675 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
+header, main, footer, nav, aside, section {
+    display: block;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+a:hover {
+    color: #AE8F32
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 112px;
+    background-color: #EEEEEE;
+}
+
+#logo {
+    display: block;
+    background-image: url(../images/logo.svg);
+    width: 200px;
+    height: 80px;
+}
+
+.profile {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 42px;
+    left: 30px;
+    border-radius: 50%;
+    background-image: url("../images/sharon3.png");
+}
+
+.online {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top:86px;
+    left: 88px;
+    background: #62C462;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 54px;
+}
+
+ul {
+    display: flex;
+    width: 85%;
+    height: 54px;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+}
+
+li:first-child {
+    background: #EEEEEE url("../images/home-solid.svg") no-repeat 12px center;
+    background-size: 25px;
+}
+
+li:nth-child(2) {
+    background: url("../images/note.svg") no-repeat 12px center;
+    background-size: 17px;
+}
+
+li:nth-child(3) {
+    background: url("../images/cog-solid.svg") no-repeat 12px center;
+    background-size: 21px;
+}
+
+nav {
+    position: relative;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/menu.png");
+}
+
+.menuArea {
+    position: absolute;
+    top: -100%;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(182, 181, 181);
+    border-bottom-left-radius: 20px;
+    transition: top .7s ease;
+}
+
+.menuArea ul {
+    margin: auto;
+}
+
+.menuContent {
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.menuContent li{
+    width: 100%;
+    height: 20px;
+    margin-top: 80px;
+    background: unset;
+
+}
+
+.menuContent a:hover{
+    color: #ffffff;
+    font-size: 1.4rem;
+    transition: 0.4s;
+}
+
+.exitMenu {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/times-solid.svg);
+    margin: 40px 15px;
+}
+
+.search {
+    position: absolute;
+    width: 20px;
+    top: 15px;
+    right: 4%;
+}
+
+#listPage #wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    max-width: 1200px;
+}
+
+#listPage h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+#listPage .pending {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+#listPage .mainContent {
+    width: 832px;
+    background-color: #EEEEEE;
+}
+
+#listPage .button {
+    display: flex;
+    width:100%;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+#listPage .mainContent article {
+    position: relative;
+    max-width: 816px;
+    height: 70px;
+    margin: auto;
+    margin-top: 8px;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position-x: 8px;
+    background-position-y: 15px;
+    border-radius: 10px;
+}
+
+#listPage .mainContent article:last-child {
+    margin-bottom: 20px;
+}
+
+#listPage .mainContent article:first-child {
+    margin-top: 34px;
+    background-image: url(../images/sharon3.png); 
+    background-size: 39px;
+}
+
+#listPage .mainContent article:nth-child(2) {
+    background-image: url(../images/profile2.png); 
+    background-size: 39px;
+
+}
+
+#listPage .mainContent article:nth-child(3) {
+    background-image: url(../images/profile3.png); 
+    background-size: 39px;
+
+}
+
+#listPage .mainContent article:nth-child(4) {
+    background-image: url(../images/profile4.png); 
+    background-size: 39px;
+
+}
+
+#listPage .mainContent article:nth-child(5) {
+    background-image: url(../images/profile5.png); 
+    background-size: 39px;
+}
+
+#listPage .client {
+    position: absolute;
+    top: 27px;
+    left: 65px;
+}
+
+#listPage .sickness {
+    position: absolute;
+    left: 205px;
+    top: 29px;
+    font-size: 12px;
+}
+
+#listPage .time {
+    position: absolute;
+    top: 19px;
+    right: 12%;
+    font-size: 10px;
+    line-height: 18px;
+}
+
+#listPage .mainContent article a {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    top :15px;
+    right: 2%;
+    border-radius: 50%;
+    border: 1px solid rgb(148, 148, 148);
+    background: #EEEEEE url(../images/rightArrow.png) no-repeat center;
+}
+
+#listPage .mainContent article a:hover {
+    background-color: rgb(172, 165, 166);
+}
+
+#listPage .button input {
+    width: 300px;
+    height: 40px;
+    border-style: none;
+    background-color: rgb(212, 211, 211);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#listPage .button input:hover {
+    background-color: rgb(172, 165, 166);
+}
+/* ------------------------------------------------------ Second Page -------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+#object #wrapper {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    margin: auto;
+    max-width: 1200px;
+}
+
+#object .clientProfileContainer {
+    max-width: 243px;
+    height: 350px;
+}
+
+#object .clientProfileContainer article {
+    width: 98px;
+    height: 98px;
+    margin: 30px 0 0 20px;
+    background-image: url("../images/sharon3.png");
+}
+
+#object .clientProfileContainer p{
+    width:100%;
+    margin-top:10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.phoneNum {
+    font-size: 14px;
+}
+
+#object .clientProfileContainer section {
+    text-align: center;
+}
+
+#object .clientProfileContainer input {
+    width: 120px;
+    height: 50px;
+    margin-top: 15px;
+    border-style: none;
+    border-radius: 30px;
+}
+
+#object input:hover {
+    background-color: rgb(172, 165, 166);
+    cursor: pointer;
+}
+
+.prescriptionButton {
+    background-color: #D6D6D6;
+}
+
+.informationButton {
+    color: #FFFFFF;
+    background-color: #7A7A7A;
+}
+
+#object .infoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 482px;
+    height: 320px;
+    margin: 30px 0 20px 80px;
+    padding-left: 20px;
+    border-left: 1px solid #dbdbdb;
+}
+
+.infoContainer p{
+    width: 167px;
+    height: 80px;
+    margin-left: 30px;
+    padding: 13px 0 0 12px;
+    font-size: 14px;
+    line-height: 25px;
+    border-bottom: 1px solid #dbdbdb; 
+}
+
+.questionnaireContainer {
+    width: 454px;
+    height: 577px;
+    border: 1px solid #000000;
+}
+
+.questionnaireContainer > span{
+    font-weight: bold;
+    margin-left: 41%;
+}
+
+.oneQuestionContainer {
+    width: 376px;
+    margin: 30px 0 0 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.oneQuestionContainer p {
+    width: 380px;
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+
+.oneQuestionContainer span{
+    padding-left: 10px;
+    font-size: 13px;
+}
+
+.form-check-input:checked {
+    background-color: #595b5d;
+    border-color: #595b5d;
+}
+
+.form-check-input:disabled {
+    opacity: 100%;
+}
+
+.form-check-input:disabled~.form-check-label, .form-check-input[disabled]~.form-check-label {
+    opacity: 100%;
+}
+
+.form-check {
+    margin-bottom: 0;
+}
+
+.form-label {
+    margin: 20px 0 0 25px;
+}
+
+.form-control {
+    width: 90%;
+    height: 60px;
+    margin: auto;
+    font-size: 12px;
+    /* pointer-events:none; */
+    border-color: #000000;
+}
+
+.medicalPast {
+    position: relative;
+    width: 600px;
+    height: 192px;
+    margin-top: -200px;
+    border: 1px solid #000000;
+}
+
+.medicalPast p:first-child {
+    position: absolute;
+    top: 10px;
+    left: 38px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.medicalPast section {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 39px;
+    left: 38px;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+.medicalPast section span{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.medicalPast section p {
+    margin-top: -4px;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.medicalPast .sicknessName {
+    position: absolute;
+    width: 190px;
+    top: 44px;
+    left: 98px;
+    font-size: 10px;
+    line-height: 16px;
+    background: url("../images/whatsapp-brands.svg") no-repeat;
+    background-size: 15px;
+    background-position-x: 155px;
+    background-position-y: 14px; 
+}
+
+.medicalPast .sicknessName span{
+    font-weight: bold;
+}
+
+.medicalPast section:nth-child(2){
+    top: 101px;
+}
+
+.medicalPast p:nth-child(3){
+    top: 106px;
+    background-position-x: 134px;
+}
+/* ------------------------------------------------------ Third Page -------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+#form #wrapper {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.detailsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 300px;
+    margin: 40px 0 0 20px;
+    border-right: 1px solid #EEEEEE;
+    /* background-color: #7A7A7A; */
+}
+
+.detailsContainer h3{
+    width: 100%;
+    margin: 12px 0 0 42px;
+    font-size: 25px;
+}
+
+#form article {
+    width: 100%;
+    height: 98px;
+    background-image: url(../images/sharon3.png);
+    background-repeat: no-repeat;
+    margin: 10px 0 20px 65px;
+}
+
+.detailsContainer > p{
+    width: 30%;
+    margin-left: 20px;
+    text-align: center;
+    /* background-color: #AE8F32; */
+}
+
+.detailsContainer > p > span{
+    font-size: 13px;
+}
+
+.detailsContainer input{
+    width: 200px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.detailsContainer input:hover {
+    background-color: #a19f9f;
+}
+
+
+.formContainer {
+    width: 1000px;
+    background: #595b5d;
+    /* height: 400px; */
+}
+  /* ------------------------------------------------------  Phone  -------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 666px) {
+    li:first-child {
+        background-image:none;
+    }
+
+    li:nth-child(2) {
+        background-image:none;
+    }
+
+    li:nth-child(3) {
+             background-image:none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        height: 80px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .logo {
+        width: 200px;
+        height: 80px;
+        background-size: 100px;
+    }
+
+    .profile {
+        width: 30px;
+        height: 30px;
+        top: 28px;
+        left: unset;
+        right: 10px;
+        background-size: 30px;
+    }
+
+    .menu {
+        display: block;
+        width: 22px;
+        height: 22px;
+        top: 34px;
+        left: 10px;
+        background-size: 22px;
+    }
+
+    .searchPhone {
+        position: absolute;
+        width: 20px;
+        top:34px;
+        right: 55px;
+    }
+    
+    .online {
+        display: none;
+    }
+
+    #listPage .client {
+        top: 20px;
+    }
+    
+    #listPage .sickness {
+        top: 40px;
+        left: 65px;
+    }
+
+    #listPage .time {
+        right: 14%;
+    }
+
+    #object #wrapper {
+        justify-content:center;
+    }
+
+    #object .clientProfileContainer {
+        max-width: 140px;
+        height: 300px;
+    }
+
+    #object .clientProfileContainer article {
+        width: 60px;
+        height: 60px;
+        margin-top: 20px;
+        background-size: 60px;
+    }
+    
+    #object .clientProfileContainer p{
+        margin-top:5px;
+        margin-bottom: 0px
+    }
+
+    .reg {
+        display: none;
+    }
+    
+    .phoneNum {
+        font-size: 12px;
+    }
+
+    #object .clientProfileContainer input {
+        margin-top: 30px;
+    }
+
+    #object .infoContainer {
+        width: 200px;
+        height: unset;
+        margin: 20px 0 0 20px;
+    }
+    
+    .infoContainer p{
+        margin-left: 0;
+        padding-top: 0;
+        height: unset;
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .questionnaireContainer {
+        width: 100%;
+
+    }
+
+    .medicalPast {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
